@@ -1,0 +1,737 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="modal" tabindex="-1" role="dialog" id="da">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">DA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The Dearness Allowance (DA) is a calculation on inflation and allowance paid to government employees, public sector employees (PSE) and pensioners in India, Bangladesh and Pakistan. Dearness Allowance is calculated as a percentage of an Indian citizen's basic salary to mitigate the impact of inflation on people.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="basic">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Basic Salary</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Basic salary refers to the amount of money that an employee receives prior to any extras being added or payments deducted. It excludes bonuses, overtime pay or any other potential compensation from an employer. The whole amount of basic salary is part of the take-home salary</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="hra">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">HRA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>House Rent Allowance, or commonly known as HRA, is an amount which is paid by employers to employees as a part of their salaries. This is basically done as it helps provide employees with tax benefits towards the payment for accommodations every year.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="conveyance">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Conveyance</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Conveyance allowance, also known as transport allowance, is a kind of allowance offered by employers to their employees to compensate for their travel expense to and from their residence and workplace</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="lta">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">LTA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Leave Travel Allowance (LTA) is a type of allowance which is provided by the employer to his employee who is travelling on leave from the work to cover his travel expenses. LTA is an important component of the salary of the employee as it is eligible for income tax exemption as per the Income Tax Act, 1961</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal" tabindex="-1" role="dialog" id="rent">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">House Rent</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Renting, also known as hiring or letting, is an agreement where a payment is made for the temporary use of a good, service or property owned by another. A gross lease is when the tenant pays a flat rental amount and the landlord pays for all property charges regularly incurred by the ownership</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="other">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Other Income</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Other income is income that does not come from a company's main business, such as interest. Examples of other income include income from interest, rent, and gains resulting from the sale of fixed assets. Companies present other income in a separate section, before income from operations</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ptax">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Personal Tax</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The amount of Professional Tax you pay is calculated on predetermined slabs and on the basis of the salary or monthly income levels. It is usually around Rs 200 a month, with the maximum payable in a year being Rs 2,500</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ac">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80C</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>section 80C allows deduction from gross total income (before arriving at taxable income) of up to Rs 1.5 lakh per annum on eligible investments and specified expenses</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ad">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80D</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80D of the Income Tax Act provides income tax deductionsrelated to the medical insurance premium paid for you and your family members. You can claim a tax deduction for the health insurance premium paid for self, parents, children, and spouse</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="add">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80DD</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80DD of the Income Tax Act, 1961, allows individuals to claim tax benefits for the expenses incurred on the medical treatment, training or rehabilitation of a disabled dependant (at least 40% of any of the specified disability)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="addb">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80DDB</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80DDB provides that if an individual or an HUF has incurred medical expenses for treatment of specified disease or ailment, such expense is allowed as deduction, subject to such conditions and capped at such amount as specified, under Section 80DDB of Income Tax Act.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ae">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80E</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80E of the Income Tax Act provides provisions for tax deduction on educational loans. Such loans can be availed for higher studies of the spouse or children of a taxpayer, with the deduction available only on the interest component of said loan.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ag">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80G</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80G of the I-T Act allows donations made to specified relief funds and charitable institutions as a deduction from gross total income before arriving at taxable income. ... Also, even on donations to notified entities, you can claim 100% deduction only on donations to a specified list</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="agg">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80GG</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>80GG – Deduction in respect of rent paid. 80GG is a deduction under Chapter VI-A of the Income Tax Act, 1961. It has been introduced to provide relief to those individuals who do not receive any house rent allowance but are paying rent for the stay.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="agga">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80GGA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80GGA allows deductions for donations made towards scientific research or rural development. This deduction is allowed to all assessees except those who have an income (or loss) from a business and/or a profession. ... 100% of the amount that is donated or contributed is considered eligible for deductions</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="aggc">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80GGC</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80GGC of the Income Tax Act provides tax deductions for contributions made to political parties. This can range from 50% to 100% of the amount contributed. ... Under Section 80GGC Individuals can avail of tax deductions that range from 50% - 100% of the contribution amount</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="atta">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80TTA</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80TTA is titled as 'Deduction in respect of interest on deposits in savings account' in the Income Tax Act. ... You can claim exemption on any number of savings accounts as long as the total amount you are seeking exemption on is less than Rs. 10,000</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="au">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">80U</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Section 80U of the Income Tax Act, 1961 includes provisions for tax deduction benefit to individual taxpayers suffering from a disability. In order to claim tax deduction under section 80U, the individual must be certified as a person with a disability by appropriate medical authority.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="via">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Deduction under Chapter VI A</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Deduction under Chapter VI A, will help you reduce your taxable income. ... For example, you can claim deductions under sections 80C, 80CCC, 80CCD, 80CCE and 80D. Each of these sections caters to a specific type of investments or expenses. For instance, Section 80CCD is for pension scheme deductions</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="gs">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Gross Salary</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Gross salary is the term used to describe all of the money you've made while working at your job, figured before any deductions are taken for state and federal taxes, Social Security and health insurance</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="hraa">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">HRA rebate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The amount of HRA exemption is deductible from the total income before arriving at a taxable income. For most employees, House Rent Allowance (HRA) is a part of their salary structure. ... Subject to certain conditions, a part of HRA is exempted under Section 10 (13A) of the Income-tax Act, 1961</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ic">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Income chargeable under head salary </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>  Salary income is chargeable to tax on “due basis” or “receipt basis” whichever is earlier. ... Exceptions - Remuneration, bonus or commission received by a partner from the firm is not taxable under the head Salaries rather it would be taxable under the head business or profession</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="ti">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Taxable Income</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p> Basically, it's your total, gross income minus allowable personal exemptions and deductions. The individual tax forms — 1040EZ, 1040A or 1040 — act as filters here to help you to reach the smallest taxable income leve</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="tit">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tax in total income</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Total Income is the income on which tax liability is determined. It is necessary to compute total income to ascertain tax liability. Section 80C to 80U provides certain deductions which can be claimed from Gross Total Income (GTI)</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="tr">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tax Rebate</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>A refund on taxes when the liability on tax is less than the tax paid by the individual is referred to as Income Tax Rebate. Taxpayers generally receive a refund on the income tax if they have made payment of tax more than they owe. At the end of the fiscal year, they will receive the refund of tax money</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="hne">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Health and Education Cess</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Acess is a form of tax levied or collected by the government for the development or welfare of a particular service or sector. It is charged over and above direct and indirect taxes. At present, the government charges a 4% health and education cess on the direct income tax liability of individuals</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="tp">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Tax Payable</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Taxes payable are the amount of money a company owes in federal, provincial and municipal taxes. Harmonized sales tax (HST), income taxes and property taxes all contribute to taxes payable and appear under liabilities on the balance sheet.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<form method="post" class="form-inline my-2 my-lg-0 float-right">
+    {{form1.hidden_tag()}}
+     {{form1.theme(class="form-control mr-sm-2")}}{{form1.submit(class="btn btn-light my-2 my-sm-0")}}
+
+</form>
+
+     <br><br><br><br><br><br>
+<div align="center" class="container" >
+	<h1 style="color:white"> Tax Calculator </h1>
+     <p style="color:white">add amount according to per annum</p>
+</div>
+<br><br><br>
+<div class="container-fluid" style="border:2px solid #cecece; width : 80%;color:white">
+    <br>
+   <form method="post">
+
+        {{form.hidden_tag()}}
+           <br>
+        <h4 align="center">PERSONAL DETAILS</h4>
+        <hr style="border: 1px solid white">
+                <div class="form-group">
+        {{form.name.label(class='form-group')}} {{form.name(class='form-control')}}
+            {% for error in form.name.errors %}
+                <span style="color:red">{{error}}</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-group">
+        {{form.job.label(class='form-group')}} {{form.job(class='form-control')}}
+            {% for error in form.job.errors %}
+                <span style="color:red">{{error}}</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-group">
+        {{form.age.label(class='form-group')}} {{form.age(class='form-control')}}
+            {% for error in form.age.errors %}
+                <span style="color:red">{{error}}</span>
+            {% endfor %}
+        </div>
+
+        <div class="form-group">
+        {{form.city.label(class='form-group')}} {{form.city(class='form-control')}}
+            {% for error in form.city.errors %}
+                <span style="color:red">{{error}}</span>
+            {% endfor %}
+        </div>
+        <br>
+        <hr>
+           <br>
+        <h4 align="center">SALARY DETAILS</h4>
+        <hr style="border: 1px solid white">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#basic" >Basic Salary</button>
+                    {{form.basic(class='form-control', value=0)}}
+                        {% for error in form.basic.errors %}
+                            <span style="color:red">{{error}}</span>
+                        {% endfor %}
+            </div>
+
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#da" >DA</button> {{form.da(class='form-control', value=0)}}
+                    {% for error in form.da.errors %}
+                        <span style="color:red">{{error}}</span>
+                    {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#hra" >HRA</button> {{form.hra(class='form-control', value=0)}}
+                    {% for error in form.hra.errors %}
+                        <span style="color:red">{{error}}</span>
+                    {% endfor %}
+            </div>
+
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#conveyance" >Conveyance</button> {{form.conveyance(class='form-control', value=0)}}
+                    {% for error in form.conveyance.errors %}
+                        <span style="color:red">{{error}}</span>
+                    {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#lta" >LTA</button> {{form.lta(class='form-control', value=0)}}
+                    {% for error in form.lta.errors %}
+                    <span style="color:red">{{error}}</span>
+                {% endfor %}
+            </div>
+
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#rent" >House Rent</button> {{form.rent(class='form-control', value=0)}}
+                    {% for error in form.rent.errors %}
+                        <span style="color:red">{{error}}</span>
+                    {% endfor %}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#other" >Other Income</button> {{form.others(class='form-control', value=0)}}
+                    {% for error in form.others.errors %}
+                        <span style="color:red">{{error}}</span>
+                    {% endfor %}
+                </div>
+
+        <div class="form-group col-md-6">
+            <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#ptax" >Professional Tax</button> {{form.p_tax(class='form-control', value=0)}}
+                {% for error in form.p_tax.errors %}
+                    <span style="color:red">{{error}}</span>
+                {% endfor %}
+            </div>
+        </div>
+
+        <br>
+        <hr>
+           <br>
+        <h4 align="center" data-toggle="modal" data-target="#via">Deduction Under Chapter VIA</h4>
+        <hr style="border: 1px solid white">
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#ac" >80C</button> {{form.ac(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#ad" >80D</button> {{form.ad(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#add" >80DD</button> {{form.add(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#addb" >80DDB</button> {{form.addb(class='form-control', value=0)}}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#ae" >80E</button> {{form.ae(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#ag" >80G</button> {{form.ag(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#agg" >80GG</button> {{form.agg(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#agga" >80GGA</button> {{form.agga(class='form-control', value=0)}}
+            </div>
+        </div>
+
+        <div class="form-row">
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#aggc" >80GGC</button> {{form.aggc(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#atta" >80TTA</button> {{form.atta(class='form-control', value=0)}}
+            </div>
+            <div class="form-group col-md-3">
+                <button type="button" class="form-group btn btn-outline-light" data-toggle='modal' data-target="#au" >80U</button> {{form.au(class='form-control', value=0)}}
+            </div>
+        </div>
+<br><hr>
+        <div align="center">
+            {{form.submit(class='btn btn-outline-light btn-lg')}}
+        </div>
+
+    </form>
+    <br>
+</div>
+
+    <br><br><br><br>
+<div class="container-fluid" style="border:2px solid #cecece; width : 80%;color:white">
+    <br>
+            <h4 align="center">TAX AND REBATE</h4>
+
+    <table class="table">
+  <tbody>
+    <tr>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#gs">Gross Salary : {{gross_salary}}</button></td>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#ic">Income Chargeable Under Head Salary : {{income_chargeable}}</button></td>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#hraa">HRA Rebate : {{hra_calculation}}</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#ti">Taxable Income : {{taxable_income}}</button></td>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#hne">Health and Education Cess : {{cess}}</button></td>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#tit">Tax in total Income : {{tax_in_income}}</button></td>
+    </tr>
+    <tr>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#tr">Tax Rebate : {{tax_rebate}}</button></td>
+      <td><button type="button" class="btn btn-light btn-lg" data-toggle="modal" data-target="#tp">Tax Payable : {{tax_payable}}</button></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<br>
+{% endblock %}
